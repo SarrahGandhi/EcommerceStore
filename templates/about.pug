@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title About Us
+    link(rel="stylesheet", href="/styless.css")
+  body
+    header
+      h1 About Us
+      nav
+        ul
+          li: a(href="/") Home
+          li: a(href="/about") About Us
+          li: a(href="/contact") Contact
+    main
+      section#intro
+        h2 Welcome to [Your Company Name]!
+        p We are passionate about [your company's mission or services]. Our team is dedicated to delivering top-notch [products/services] to our customers.
+      section#team
+        h2 Meet Our Team
+        ul
+          li
+            h3 Jane Doe - CEO
+            p Jane is the visionary behind our success.
+          li
+            h3 John Smith - CTO
+            p John leads our tech innovations with passion.
+          li
+            h3 Emily Johnson - Designer
+            p Emily brings life to our ideas through beautiful designs.
+      section#values
+        h2 Our Values
+        ul
+          li Commitment to Quality
+          li Customer-Centric Approach
+          li Innovation and Creativity
+    footer
+      p &copy; #{new Date().getFullYear()} [Your Company Name]. All rights reserved.

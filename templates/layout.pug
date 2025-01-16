@@ -1,0 +1,46 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Test Site
+        link(rel="stylesheet", href="/styless.css")
+    body 
+        header#header
+            
+            nav#nav
+                h1 SarrahGandhi
+                ul
+                    li: a(href="/") Home
+                    li: a(href="/shop") Shop
+                    li: a(href="/about") About
+                    li: a(href="/contact") Contact
+                ul 
+                    li: img(src="images/icons/mdi_account-alert-outline.png", alt="twitter")
+                    li: img(src="images/icons/ant-design_shopping-cart-outlined.png", alt="instagram")
+                    li: img(src="images/icons/akar-icons_search.png", alt="search")
+        main#main
+
+            block layout-content
+            block range
+            block productrange
+        footer#footer
+            h3 Sarrah Gandhi 
+            h3 Links 
+                ul
+                    li: a(href="/") Home
+                    li: a(href="/shop") Shop
+                    li: a(href="/about") About
+                    li: a(href="/contact") Contact
+                
+            h3 Help 
+                ul
+                    li: a(href="/paymentoptions") Payment Options
+                    li: a(href="/shippingoptions") Shipping Options
+                    li: a(href="/returns") Returns
+                    li: a(href="/faq") FAQ
+            h3 NewsLetter 
+                input(type="text")  
+                button(type="submit") Subscribe
+
+            p &copy;Copyright HTTP5222, 2025.

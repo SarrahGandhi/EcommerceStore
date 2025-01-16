@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  margin-top: 20px;
+
+  align-items: center;
+  justify-content: space-between;
+  margin: 70px;
+  margin-bottom: 20px;
+}
+#nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+#nav li a {
+  text-decoration: none;
+  color: var(--Color-2, #1e1e1e);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#nav li a:hover {
+  color: rgb(103, 0, 0);
+}
+#layout-content {
+  position: relative;
+}
+#layout-content img {
+  height: 700px;
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the area, cropping it if necessary */
+  object-position: center; /* Centers the image to crop from the center */
+}
+#floater {
+  display: flex;
+  position: absolute;
+  border-radius: 5px;
+  background: var(--Color-1, #c1dcdc);
+  height: 400px;
+  padding-left: 40px;
+  width: 40%;
+  right: 58px;
+  top: 150px;
+  margin: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#floater p:nth-child(1) {
+  color: var(--Font-Color, #333);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+#floater h1 {
+  color: var(--Primary, #b88e2f);
+  font-family: Poppins;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 125% */
+  word-break: break-word;
+  padding-top: 0px;
+  margin: 0;
+  padding-right: 40px;
+}
+button {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background: var(--Primary, #b88e2f);
+  border: none;
+  width: 200px;
+  padding: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+#range {
+  margin: 0px;
+  padding: 0px;
+}
+#range h2 {
+  color: var(--Font-Color, #333);
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  padding-bottom: 1px;
+  margin: 0;
+  margin-top: 50px;
+}
+#range p {
+  color: var(--Font-Color1, #666);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 0px;
+  margin: 0;
+}
+
+#list ul {
+  display: flex;
+  flex-direction: row;
+  margin: 100px;
+  margin-top: 30px;
+  padding: 0px;
+  list-style-type: none;
+  gap: 40px;
+  flex-basis: 30%;
+  justify-content: center;
+  max-width: 100%;
+
+  /* Centers the image to crop from the center */
+}
+
+#list li {
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+  max-width: 30%;
+}
+#list li img {
+  object-fit: fill; /* Ensures the image covers the area, cropping it if necessary */
+  object-position: left; /* Centers the image to crop from the center */
+  height: 500px;
+  width: auto;
+  border-radius: 10px;
+}
+#list li h3 {
+  color: var(--Font-Color, #333);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+#productlist {
+  margin: 0;
+}
+#productlist ul {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  list-style-type: none;
+}
+#productlist li {
+  display: flex;
+  flex-direction: column;
+  min-width: 25%;
+  max-width: 25%;
+  padding: 10px;
+}
