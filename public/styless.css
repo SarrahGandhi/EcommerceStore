@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 48px;
-  margin-top: 20px;
+  margin-top: 10px;
 
   align-items: center;
   justify-content: space-between;
