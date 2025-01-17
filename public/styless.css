@@ -235,29 +235,36 @@ button a {
   margin-bottom: 20px;
   line-height: 10px;
 }
+
 /* Footer */
+#footer {
+  background-color: #e5e5e5;
+}
 #footer-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 80px;
-  padding: 0;
+
   gap: 90px;
 }
 #footer-content ul {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   list-style-type: none;
-  margin: 0px;
   padding: 0px;
+  margin-top: 40px;
+}
+#footer-content h3 {
+  margin-top: 40px;
 }
 #newsletter {
   display: flex;
   flex-direction: column;
   gap: 20px;
   list-style-type: none;
-  margin: 0px;
+
   padding: 0px;
 }
 #footer-content ul li a {
