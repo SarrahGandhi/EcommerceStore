@@ -11,8 +11,14 @@ app.get("/", (request, response) => {
 
   //   response.status(200).send("Test");
 });
+app.get("/shop", (request, response) => {
+  response.render("shop", { title: "Shop" });
+});
 app.get("/about", (request, response) => {
   response.render("about", { title: "About" });
+});
+app.get("/contact", (request, response) => {
+  response.render("contact", { title: "Contact" });
 });
 
 app.listen(port, () => {

@@ -3,21 +3,27 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  padding: 0;
+  padding: 0px;
   box-sizing: border-box;
 }
 
 #nav {
-  margin-left: 30px;
   display: flex;
   flex-direction: row;
   gap: 48px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 
   align-items: center;
   justify-content: space-between;
-  margin: 70px;
-  margin-bottom: 20px;
+  margin: 20px 70px 20px 70px;
+}
+#nav h1 a {
+  text-decoration: none;
+  color: var(--Color-2, #1e1e1e);
+}
+#nav h1 a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--Primary-Hover, #000000);
 }
 #nav ul {
   list-style: none;
@@ -35,7 +41,8 @@ body {
   line-height: normal;
 }
 #nav li a:hover {
-  color: rgb(103, 0, 0);
+  text-decoration: underline;
+  text-decoration-color: var(--Primary-Hover, #000000);
 }
 #layout-content {
   position: relative;
@@ -94,6 +101,9 @@ button {
   padding: 20px;
   justify-content: center;
   margin-bottom: 20px;
+}
+button:hover {
+  background: var(--Primary-Hover, #88691f);
 }
 button a {
   text-decoration: none;
@@ -200,13 +210,27 @@ button a {
   list-style-type: none;
 }
 #productlist li {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 22%;
   max-width: 22%;
 }
+#productlist li button {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+
+  display: none;
+}
+#productlist li:hover button {
+  display: block;
+}
+#productlist li:hover img {
+  filter: brightness(0.5);
+}
 #productdetails {
-  background-color: #ececec78;
+  background-color: #f8f8f8;
   padding-left: 20px;
   margin-bottom: 20px;
   line-height: 10px;
@@ -245,4 +269,17 @@ button a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+#footer p {
+  background-color: #7e7e7e37;
+  color: #000;
+  padding: 20px 70px 20px 70px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#subpages {
+  text-align: center;
 }
