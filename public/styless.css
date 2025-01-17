@@ -1,4 +1,6 @@
+/* Importing fonts from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* General body styles */
 body {
   background-color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
@@ -6,17 +8,16 @@ body {
   padding: 0px;
   box-sizing: border-box;
 }
-
+/* Navigation bar styles */
 #nav {
   display: flex;
   flex-direction: row;
   gap: 48px;
-  /* margin-top: 10px; */
-
   align-items: center;
   justify-content: space-between;
   margin: 20px 70px 20px 70px;
 }
+/* Navigation header link styles */
 #nav h1 a {
   text-decoration: none;
   color: var(--Color-2, #1e1e1e);
@@ -44,6 +45,7 @@ body {
   text-decoration: underline;
   text-decoration-color: var(--Primary-Hover, #000000);
 }
+/* Layout content container styles */
 #layout-content {
   position: relative;
 }
@@ -53,6 +55,7 @@ body {
   object-fit: cover; /* Ensures the image covers the area, cropping it if necessary */
   object-position: center; /* Centers the image to crop from the center */
 }
+/* Floater overlay styles */
 #floater {
   display: flex;
   position: absolute;
@@ -229,6 +232,7 @@ button a {
 #productlist li:hover img {
   filter: brightness(0.5);
 }
+/* Product details */
 #productdetails {
   background-color: #f8f8f8;
   padding-left: 20px;
@@ -287,6 +291,7 @@ button a {
   font-weight: 400;
   line-height: normal;
 }
+/* Styling for subpages i.e., contact about and shop */
 #subpages {
   text-align: center;
 }
