@@ -1,0 +1,17 @@
+extends layout 
+
+//- /admin/menu/add
+block layout-content 
+    h1 Welcome to My Express Website 
+    form(method="post", action="/admin/menu/add/submit")
+        div.form_div
+            label(for="wgt") Weight: 
+            input(type="number", id="wgt", name="weight")
+        div.form_div
+            label(for="href") URI: 
+            input(type="text", id="href", name="path", placeholder="e.g. /about")
+        div.form_div
+            label(for="link-name") Link Name: 
+            input(type="text", id="link-name", name="name", placeholder="e.g. About")
+
+        button(type="submit") Add Link
